@@ -1,0 +1,526 @@
+/*Edit Font*/
+
+/*
+
+font-family: 'Fredoka One', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Space Mono', monospace;
+font-family: 'Concert One', cursive;
+font-family: 'Work Sans', sans-serif;
+*/
+
+/*Color Palette*/
+
+/*
+#00275E - midnight blue
+#6D98AB - lightblue
+#FEB729 - yellow orange
+#A8B1B8 - hit gray
+*/
+
+body {
+    padding-top: 50px;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+    font-weight: 500;
+}
+
+.row-eq-height {
+    display: flex;
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 50px;
+}
+
+p {
+    line-height: 1.75;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+}
+
+a,
+a:hover,
+a:focus {
+    color: #FEB729;
+    text-decoration: none;
+}
+
+/*Naavigation Bar*/
+
+nav {
+    background: url(image/background.jpg);
+    padding: 10px;
+    position: absolute;
+}
+
+nav a,
+nav a:hover {
+    text-decoration: none;
+
+}
+
+.icon-bar {
+    background: #FEB729;
+}
+
+#headNav a.active,
+#headNav a:active,
+#headNav a:focus,
+#headNav a:hover {
+    color: #FEB729;
+}
+
+/*Remove Boostrap hover effect */
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.taxi-brand {
+    font-family: 'Concert One', cursive;
+    color: #FEB729;
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-left: 15px;
+}
+
+nav .navbar-nav {
+    font-weight: 500;
+    letter-spacing: 2px;
+
+}
+
+#headNav .btn-nav {
+    font-family: 'Fredoka One', cursive;
+    color: #FEB729;
+    font-size: 24px;
+    background-color: #fff;
+    margin-top: 5px;
+
+}
+
+#headNav .btn-nav:hover,
+#headNav .btn-nav:focus,
+#headNav .btn-nav:active {
+    color: #fff;
+    background: #FEB729;
+    border: 2px solid #fff;
+    transition: 0.5s;
+}
+
+.nav-ct {
+    margin-left: 12%;
+    line-height: 2.5px;
+    padding-left: 5px;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.nav-ct a:not(.active) {
+    color: #fff;
+}
+
+/*Slide section*/
+
+#slide-wrap,
+.slide-ct {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+#slide-wrap {
+    position: relative;
+}
+
+.item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1 {
+    background-image: url("car/taxi1.jpg");
+    background-attachment: fixed;
+    background-position: top left;
+}
+
+.slide2 {
+    background-image: url("car/girlz.jpg");
+    background-attachment: fixed;
+}
+
+.slide3 {
+    background-image: url("car/taxi4.jpg");
+    background-attachment: fixed;
+    background-position: top left;
+}
+
+.slide-ct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-ct span {
+    font-size: 55px;
+    color: #FFF;
+    letter-spacing: 2px;
+}
+
+.slide-ct span.orange-text {
+    color: #FEB729;
+}
+
+.left,
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*About Us*/
+
+#about-us {
+    margin-top: 20px;
+}
+
+#about-us h1 {
+    margin-bottom: 40px;
+}
+
+#about-us #about-info {
+    padding: 5px;
+}
+
+#about-info p {
+    margin-top: 10px;
+}
+
+/*Service*/
+
+#service {
+    margin-top: 20px;
+}
+
+.service-ct {
+    background: #F5F5F5;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#service img {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+#service p {
+    font-size: 16px;
+    color: grey;
+    font-weight: 600;
+}
+
+/*Customer Review*/
+
+.nospace > div[class^="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.img-review {
+    height: 450px;
+    width: 100%;
+    margin: 0;
+}
+
+.modal-title {
+    color: #FEB729;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+
+/*Team*/
+
+.info-card {
+    margin: 10px;
+    perspective: 600px;
+}
+
+.front,
+.back {
+    background: #FFF;
+    transition: transform 1s;
+    backface-visibility: hidden;
+    border: 1px solid #A8B1B8;
+}
+
+.front {
+    overflow: hidden;
+    width: 300px;
+    height: 320px;
+    position: absolute;
+    z-index: 1;
+}
+
+.back {
+    padding: 20px;
+    padding-top: 0px;
+    width: 300px;
+    height: 320px;
+    transform: rotateY(-180deg);
+}
+
+#team h2 {
+    color: #FEB729;
+}
+
+.info-card:hover .back {
+    transform: rotateY(0);
+}
+
+.info-card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+}
+
+/*Pricing*/
+
+.pricing {
+    position: relative;
+    margin-top: 25px;
+    border: 3px solid #FFE082;
+}
+
+.pricing-active {
+    border: 3px solid #FEB729;
+    margin-top: 10px;
+    box-shadow: 7px 7px #FFF3E0;
+}
+
+.pricing:hover {
+    border: 3px solid #FEB729;
+}
+
+.pricing-head {
+    text-align: center;
+}
+
+.pricing-head h3,
+.pricing-head h4 {
+    margin: 0;
+    line-height: normal;
+}
+
+.pricing-head h4 span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.pricing-head h3 {
+    font-weight: 400;
+    color: #fff;
+    padding: 12px 0;
+    font-size: 32px;
+    background: #FEB729;
+    border-bottom: solid 1px #FFE0B2;
+}
+
+.pricing-head h4 {
+    color: #62a2ed;
+    padding: 5px 0;
+    font-size: 54px;
+    font-weight: 300;
+    background: #fbfef2;
+    border-bottom: solid 1px #A8B1B8;
+}
+
+.pricing-head-active h4 {
+    color: #01579B;
+}
+
+.pricing-head h4 i {
+    top: -8px;
+    font-size: 28px;
+    font-style: normal;
+    position: relative;
+}
+
+.pricing-content li {
+    color: #424242;
+    font-size: 15px;
+    padding: 7px 15px;
+    border-bottom: solid 1px #f5f9e7;
+}
+
+.pricing-footer {
+    color: #777;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    padding: 0 20px 19px;
+}
+.pricing-footer p {
+    font-size: 16px;
+}
+.price-active h4 {
+    color: #fed136;
+}
+
+.price-active .pricing-head h4,
+.pricing:hover .pricing-head h4 {
+    color: #0DD;
+    padding: 15px 0;
+    font-size: 80px;
+    transition: color 0.5s ease-in-out;
+}
+
+.btn-booking {
+    color: #FFFFFF;
+    background-color: #e71c1c;
+    padding: 8px 22px;
+    font-size: 18px;
+
+}
+
+.btn-booking:hover,
+.btn-booking:focus,
+.btn-booking:active,
+.btn-booking.active {
+    color: #e71c1c;
+    background-color: #FFFFFF;
+    border: 1px solid #e71c1c;
+    transition: all 1s;
+}
+
+/*Booking Section*/
+
+#booking {
+    margin-top: 20px;
+}
+
+#booking-form {
+    background: #000;
+}
+
+#booking-form h2 {
+    color: #fff;
+}
+
+#booking form {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+#booking-form .label p {
+    color: #fed136;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+#booking-form input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="time"] {
+    color: #dedede;
+    background-color: #1a1a1a;
+    height: 30px;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+
+.radio {
+    position: relative;
+    right: -20px;
+    color: #fed136;
+    font-size: 16px;
+}
+
+.btn-pricing {
+    margin-top: 5px;
+    border-radius: 12px;
+    border: 1px solid #fed136;
+    background: #fed136;
+    color: #FFF;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+
+.btn-pricing.focus,
+.btn-pricing:focus {
+    color: white;
+    border-color: #b48b01;
+    background-color: #fec503;
+}
+
+.btn-pricing:hover {
+    color: white;
+    border-color: #f6bf01;
+    background-color: #fec503;
+}
+
+
+#img-pricing {
+    background: url('image/town.jpeg') no-repeat;
+    background-size: cover;
+}
+
+/*footer */
+
+footer {
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer span.copyright {
+    line-height: 40px;
+    text-transform: none;
+}
+
+ul.social {
+    margin-bottom: 0;
+}
+
+ul.social li a img {
+    width: 35px;
+    height: 35px;
+    transition: all 0.5s;
+}
+#contact {
+    margin-bottom: 0;
+}
+#contact h2 {
+    margin-top: 5px;
+    font-size: 35px;
+}
+ul.social li img:active,
+ul.social li img:focus,
+ul.social li img:hover {
+    border: 1px solid #A8B1B8;
+    border-radius: 50%;
+}

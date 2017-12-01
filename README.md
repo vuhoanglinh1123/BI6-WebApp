@@ -10,9 +10,13 @@ Students are expected to:
 Member list
 =====================================
 
-*Add student list of your group here*
+Vu Hoang Linh
+Dang Vinh Bao
+Phung Duc Tuan
+Nguyen Thanh Long
+Ta Hoang Hai Nam
 
 Project description
 =====================================
 
-*Add your project description here*
+Topic: Develop a Taxi Service website.
